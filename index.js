@@ -13,6 +13,9 @@ main = () => {
     let compress = document.querySelector("#compress")
     let reset = document.querySelector("#reset")
 
+    let download_section = document.querySelector("#download")
+    let link = document.querySelector("a")
+
     image_input.addEventListener("change", (e1) => {
         if(e1.target.files){
             let imageFile = e1.target.files[0]
@@ -46,9 +49,6 @@ main = () => {
                 quality_value = Number(quality.value)     
             }       
 
-            let download_section = document.querySelector("#download")
-            let link = document.querySelector("a")
-
             link.setAttribute("target", "_blank")
             link.setAttribute("download", "image.jpg")
             link.setAttribute("href", hidden_canvas.toDataURL("image/jpeg", quality_value))
@@ -61,6 +61,8 @@ main = () => {
         hidden_image.src = ""
         image_input.value = ""
         quality.value = ""
+        download_section.hidden = true
+        link.value = ""
     })
 }
 
