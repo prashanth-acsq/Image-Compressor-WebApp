@@ -1,0 +1,40 @@
+body{
+    background-color: lightblue;
+}
+
+h2{
+    border: 50px solid lightblue;
+    font-size: 45px;
+}
+
+#image_input{
+    background-color: gray;
+    border-bottom: 15px solid lightblue;
+}
+
+#preview_canvas{
+    background-color: lightslategray;
+    border-bottom: 15px solid lightblue;
+}
+
+#compress{
+    color: black;
+    width: 15%;
+    font-family: monospace;
+}
+
+#reset{
+    background-color: orange;
+    border: 1px solid orange;
+    color: black;
+    width: 15%;
+    font-family: monospace;
+}
+
+#div3{
+    border: 15px solid lightblue;
+}
+
+#div4{
+    border: 15px solid lightblue;
+}
